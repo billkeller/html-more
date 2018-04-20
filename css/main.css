@@ -2,15 +2,52 @@
 	box-sizing: border-box;
 }
 
-
 body {
 	font: normal 16px Helvetica, Arial, sans-serif;
 }
 
+.nav-main {
+	background-color: grey;
+}
+
+/*
+display: inline-block,
+elements remain inline,
+but have block-like qualities
+*/
+.nav-main li {
+	display: inline-block;
+}
+
 .nav-main li a {
-	color: green;
+	color: white;
+	padding: 20px;
+	display: block;
 }
 /* pseudo selector */
 .nav-main li a:hover {
 	color: red;
+}
+
+.nav-main li a:active {
+	background-color: blue;
+}
+
+/*
+overall container to keep
+content centered
+*/
+.container-form {
+	border: 1px solid red;
+	max-width: 800px;
+	margin: 20px auto;
+}
+
+/* selectors related to copy */
+p.lead {
+	margin-bottom: 6px;
+}
+
+p {
+	margin-bottom: 21px;
 }
